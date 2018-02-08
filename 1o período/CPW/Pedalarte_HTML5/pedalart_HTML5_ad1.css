@@ -1,0 +1,52 @@
+body{
+  background-color: #EEEE33;
+  font-family: Verdana, Liberation, serif;
+  color:#DD0000;
+  font-size:16px
+}
+
+header {
+  display:block;
+  margin-bottom: 1px;
+}
+nav {
+  display:block;
+  width: 20%;
+  float: left;
+}
+section {
+  display:block;
+  width: 77%;
+  float: right;
+}
+nav ul{
+  margin: 40px 0 0 0; /* Ordem: Top Right Down Left */
+  line-height:230%;
+}
+li{
+  list-style-image:url("../img/Engrenagem.png");
+  padding-bottom:1em;
+}
+
+a{
+  color:#DD0000;
+}
+
+a:visited{
+  color:#CC0000;
+}
+.ender{
+  float:right;
+  line-height:140%;
+  font-size:15px;
+  text-align:right;
+}
+.imgLogo{
+  border-bottom: 3px solid #DD0000;
+  margin-bottom: 6px;
+  padding-bottom:15px;
+}
+.apres{
+  font-size:18px;
+  text-align:center;
+}

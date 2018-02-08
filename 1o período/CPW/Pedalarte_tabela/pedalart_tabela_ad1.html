@@ -1,18 +1,35 @@
 <!DOCTYPE HTML>
 <HTML>
   <head>
-    <link href="pedalart_tabela_ad1.css" rel="stylesheet">
     <title>Pedalart Bicicletas</title>
+    <style>
+    body{
+      background-color: #EEEE33;
+      font-family: Verdana, Liberation, serif;
+      color:#DD0000;
+    }
+    li{
+      list-style: circle;
+      padding-bottom:1em;
+    }
+
+    a{
+      color:#DD0000;
+    }
+    a:visited{
+      color:#CC0000;
+    }
+    </style>
   </head>
   <body>
     <table id="main">
       <tr>
-        <td colspan=2 class="topbar-logo">
+        <td colspan=2 id="top-logo">
           <img src="../img/PedalarTopo.png" alt="logo Pedalart"/>
           <br><hr>
         </td><!--end top-logo-->
-        <td colspan=1 class="topbar-address">
-          <address>
+        <td colspan=1 id="address">
+          <address style="text-align:right;margin:0">
             <em>Av Tour de France, 1903<br>
             Tel:(21)98765-4321<br>
             <u>contato@pedalarte.com.br</u>
@@ -22,8 +39,8 @@
       </tr> <!-- End topbar -->
       <tr><td colspan=3><br></td></tr>
       <tr>
-        <td colspan=1 class="links">
-          <ul>
+        <td colspan=1 style="vertical-align:top;padding:0; width:33%">
+          <ul id="link-list">
             <li><a href="Pedalarte.html">Apresenta&ccedil&atildeo</a></li>
             <li><a href="Pecas.html">Pe&ccedilas</a></li>
             <li><a href="Biciletas.html">Bicicletas</a></li>
@@ -31,7 +48,7 @@
             <li><a href="Compras.html">Compras</a></li>
           </ul>
         </td>
-        <td colspan=2 class="main-info">
+        <td colspan=2 id="main-info">
           <center>Queremos proporcionar a voc&ecirc<br>
           a melhor experi&ecircncia de pedal<br><br>
           <img src="../img/Pedalarte.png" alt="pedalarte logo"/><br>
