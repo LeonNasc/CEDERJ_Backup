@@ -1,3 +1,5 @@
+/* -------------------Elementos --------------------*/
+
 body{
   background-color: #EEEE33;
   font-family: Verdana, Liberation, serif;
@@ -23,9 +25,13 @@ nav ul{
   margin: 40px 0 0 0; /* Ordem: Top Right Down Left */
   line-height:230%;
 }
-li{
+ul li{
   list-style-image:url("../img/Engrenagem.png");
   padding-bottom:1em;
+}
+
+h3{
+  color:#000066;
 }
 
 a{
@@ -35,6 +41,9 @@ a{
 a:visited{
   color:#CC0000;
 }
+
+/* ---------------- Classes -------------------*/
+
 .ender{
   float:right;
   line-height:140%;
@@ -49,4 +58,57 @@ a:visited{
 .apres{
   font-size:18px;
   text-align:center;
+}
+
+.listaPecas{
+  color:#000066;
+  list-style-type:upper-roman;
+}
+
+.preco{
+  color:#FF0000;
+  font-weight:bold;
+}
+
+/*------------------- Estilo tabBike -----------------*/
+
+#tabBike{
+  border-collapse:collapse;
+  margin-top:6px;
+  background-color:#FFCC44;
+  color:#000066;
+  font-family:Arial, Ubuntu, Sans-serif;
+}
+#tabBike td, #tabBike th{
+  border:3px solid #226699;
+  padding: 6px 12px 6px 12px;
+}
+
+#tabBike .titulo{
+  color:#FFFF00;
+  background-color:#228855;
+  font-size:24px;
+  font-weight:bold;
+  text-align:center;
+}
+#tabBike .linTH{
+  color:#FFFFFF;
+  background-color:#22AA55;
+  vertical-align:middle;
+  text-align:center;
+}
+#tabBike .colTH{
+  color:#FFFFFF;
+  background-color:#2299DD;
+  text-align:left;
+}
+
+#tabBike .preco{
+  color:#EE0000;
+  vertical-align:middle;
+}
+
+#tabBike .imgBike{
+  width: 70px;
+  height:70px;
 }
