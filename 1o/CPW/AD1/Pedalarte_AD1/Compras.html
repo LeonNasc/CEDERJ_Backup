@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+  <head>
+
+    <title>Pedalarte Bicicletas</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/pedalart_HTML5_ad1.css"/>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div>
+        <img id="top-logo" class="imgLogo" src="img/PedalarTopo.png" alt="logo Pedalart"/>
+          <address id="address" class="ender">
+            <em>Av Tour de France, 1903<br>
+            Tel:(21)98765-4321<br>
+            <u>contato@pedalarte.com.br</u>
+            </em>
+          </address><!-- end address -->
+      </div>
+
+    </header>
+
+    <nav>
+      <ul id="link-list"> <!-- target força a abertura de nova aba/janela-->
+        <li><a href="Pedalarte.html" target="_blank">Apresentação</a></li>
+        <li><a href="Pecas.html" target="_blank">Peças</a></li>
+        <li><a href="Bicicletas.html" target="_blank">Bicicletas</a></li>
+        <li><a href="Cadastro.html" target="_blank">Cadastro</a></li>
+        <li><a href="Compras.html" target="_blank">Compras</a></li>
+      </ul>
+    </nav> <!-- end nav -->
+
+
+      <section id="main-info">
+        <h3>Compras</h3>
+        <fieldset>
+          <legend>Identificação</legend>
+          <form>
+            <div class="linhaCompras">
+              <label class="colPri" for="email">E-mail:</label>
+              <input type='text' name='email' class="inpEmail"></input>
+
+              <span class="elemDir">
+                <label for="password">Senha:</label>
+                <input type='password' name='password'class="inpMedio "></input>
+              </span>
+              <p id="cadastro"> Se você ainda não tem cadastro, <a href="Cadastro.html"> clique aqui</a></p>
+            </div>
+        </fieldset> <!-- Fim do primeiro fieldset -->
+
+        <fieldset>
+          <legend>Lista de compras e pagamento</legend>
+            <div class="fsEsqCompras">
+              <label for="produtos">Produtos:<br style="line-height:1px"></label>
+            <select name="produtos">
+                <option> ---- </option>
+                <optgroup label="Guidon">
+                  <option>Alumínio CB reforçado Polido</option>
+                  <option>Alumínio CB Speed 31,8 x 420mm</option>
+                </optgroup>
+                <optgroup label="Selim">
+                  <option>RAD 7 Comfort</option>
+                  <option>SERFAS E-GEL DDMD-200</option>
+                </optgroup>
+                <optgroup label="Pedal">
+                  <option>Inglês Alumínio</option>
+                </optgroup>
+                <optgroup label="Bicicletas">
+                  <option>MTB VOLT 1.6 PT/AM</option>
+                  <option>CALOI CECI BRANCA</option>
+                  <option>POTY Branca/Vermelho</option>
+                  <option>CALOI Sport T19 V21 Marchas</option>
+                </optgroup>
+              </select>
+              <input type="button" value="Comprar"></input>
+
+              <fieldset>
+                <legend>Dados do cartão</legend>
+                <div>
+                  <fieldset class="fsEsq">
+                    <legend>Bandeira</legend>
+                    <input type='radio' name="bandeira" value="master">Master</input>
+                    <input type='radio' name="bandeira" value="visa">Visa</input>
+                    <input type='radio' name="bandeira" value="amex">Amex</input>
+                  </fieldset><!-- Fim do segundo fieldset aninhado -->
+                </div>
+                <div>
+                  <label>Validade:</label>
+                  <input type='number' class="numDD" name="cart_mes" value="1" min="1" max="12"/>/
+                  <input type='number' class="numQD" name="cart_ano" value="2018" min="2018" max="2026"/>
+                  <br><br>
+                  <label for="cart_numero">Número:</label>
+                  <input type="text" name="cart_numero" class="inpEmail"/>
+                </div>
+              </fieldset><!-- Fim do primeiro fieldset aninhado -->
+            </div> <!-- Tudo que está a esquerda no fieldset -->
+
+            <div style="text-align:right">
+              <div style="margin-bottom:12px">
+                <textarea rows="12"  name='listProd'></textarea>
+              </div>
+              <div>
+                <label class="colPriCompras" for='valor'> Valor: R$ </label>
+                <input style="width:124px" type='text' name='valor' readonly></input>
+              </div>
+            </div> <!--Tudo que está à direita no fieldset            -->
+          </form>
+        </fieldset> <!-- Fim do segundo fieldset -->
+      </section> <!-- end section -->
+  </body>
+</HTML>

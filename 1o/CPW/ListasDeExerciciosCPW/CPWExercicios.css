@@ -1,0 +1,118 @@
+/*
+ *   Estilo Geral
+ */
+body {
+    color: #FFFF00;
+    font-size: 16px;
+    background-color: #116688;
+    font-family: verdana,liberation;
+}
+
+a:link      { color:#FFFF00; text-decoration:none; }
+a:visited   { color:#EEEE00; text-decoration:none; }
+
+ol, ul       { line-height: 200%;                    }
+
+/*
+ *   Estilo Seções
+ */
+header { 
+    display:block; 
+    margin-bottom: 1px;
+}
+
+nav {
+    display:block; 
+    width: 30%; 
+    float: left;
+}
+
+section {
+    display:block; 
+    float: right;
+    width: 69%; 
+}
+
+/*
+ *   Estilo Header
+ */
+.titulo {
+    text-align: center;
+    font-size:  20px;
+    line-height: 150%;  
+    padding-top: 16px;	
+    padding-bottom: 16px;
+    margin-top: 12px;
+    border-top: 3px solid;
+    margin-bottom: 6px; 
+    border-bottom: 3px solid;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size:  18px;
+    line-height: 150%;  
+    padding-top: 8px;	
+    padding-bottom: 8px;
+}
+
+
+/*
+ *   Estilo Nav
+ */
+nav ol {
+    color: #FFFF00;
+	margin-top: 30px;
+}
+
+/***************************************
+ *   Estilo Seção Apresentação
+ */
+div.apres {
+    text-align: center;
+}
+
+/***************************************
+ *   Estilo Listas de Exercício
+ */
+ 
+.tabDefinic {
+    color: #000066;
+	margin-top: 6px;
+    border-collapse: collapse;
+    font-family: "arial,ubuntu";
+	background-color: #FFFFFF;  
+	width: 90%;
+}
+
+.tabDefinic td, .tabDefinic th {
+    border:  3px solid #226699;
+    padding: 6px 12px 6px 12px;
+}
+
+.tabDefinic .titulo {
+    color: #FFFF00;
+	font-size:  24px;
+	font-weight: bold;
+    text-align: center;
+    background-color: #228855;
+}
+
+.tabDefinic .linTH {
+    color: #FFFF00;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #2288CC;
+}
+
+.tabDefinic .colTH {
+    color: #FFFF00;
+    text-align: left;
+    background-color: #229999;
+	width: 150px;
+}
+
+.imgDefinic {
+}
+
+

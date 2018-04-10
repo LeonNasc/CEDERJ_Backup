@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head><title>Tutorial de HTML</title>
+
+<style>
+nav { 
+    display: block; 
+	text-align: left;
+    margin-bottom: 6px; 
+    padding-bottom: 12px;
+	border-bottom: 3px solid;
+}
+
+section {
+    display: block; 
+}
+
+article {
+    margin-bottom: 20px;
+    padding-bottom: 16px;	
+	border-bottom: 2px dotted;
+}
+
+body {
+	color: maroon;
+	background-color: beige;
+}
+
+a        { text-decoration: none   }
+
+a:link   { color: blue;   }
+a:vlink  { color: red;    }
+
+
+.titulo {
+    color: navy;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h3 {
+    color: darkgreen;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+<a class="titulo" name=indice">Tutorial de HTML</a><br/>
+<ol><li><a href="#intro">Introdução a Internet</a></li>
+    <li><a href="#conc">Conceitos básicos da linguagem HTML</a></li>
+	<li><a href="#topic">Tópicos avançados da linguagem HTML</a></li>
+	<li>Resumo</li></ol>
+</nav>
+<section>
+<article>
+<a name="intro"><h3>Introdução a Internet</h3></a>
+Este tópico mostra uma visão geral da internet. Como ela 
+surgiu e qual o seu impacto na sociedade.
+<p><a href="#indice">Volta ao índice</a></p>
+</article>
+<article>
+<a name="intro"><h3>Conceitos Básicos da linguagem HTML</h3></a>
+Este tópico mostra os comandos básicos que você deve 
+conhecer para criar páginas. 
+<p><a href="#indice">Volta ao índice</a></p>
+</article><article>
+<a name="intro"><h3>Tópicos avançados da linguagem HTML</h3></a>
+Este tópico cobre assuntos mais complexos que requerem um 
+conhecimento mais profundo da linguagem e de outros assuntos 
+tais como CGI e o funcionamento do servidor.
+<p><a href="#indice">Volta ao índice</a></p>
+</article>
+</section>
+</body></html>
