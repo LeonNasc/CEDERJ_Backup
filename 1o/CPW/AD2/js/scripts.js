@@ -1,4 +1,6 @@
 console.log("AD2 CPW 2018.1");
+console.log("Aluno: Leon de França Nascimento");
+console.log("Polo:SGO");
 
 //Constantes usadas no programa
 const PATHS_DE_IMAGENS = {
@@ -17,7 +19,7 @@ const TAMANHOS_DE_JANELAS = {
     "Pedal": "width=350,height=360",
 }
 
-//Questão 1
+/* ------------------------- Questão 1 -------------------------*/
 function abreJanela(tipo) {    
 
     let produtos = document.getElementById(tipo);
@@ -63,7 +65,7 @@ function exibeLista(lista){
     }
 }
 
-//Questão 2
+/* ------------------------- Questão 2 -------------------------*/
 function mostraBike(bike_index){
 
     //carregaInfoBikes retorna um array(acessável por bike_index)    
@@ -105,4 +107,83 @@ function mudaImg(imagem_path, valor){
     }
     imagem.style.textAlign = "center";
     preço.style.textAlign = "center";
+}
+
+/* ------------------------- Questão 3 -------------------------*/
+
+function validaTel(numero, tipo){
+
+    if(validaTamanhoTel(numero, tipo)){        
+      validaDigitosTel(numero);
+    }
+}
+
+function validaTamanhoTel(numero, tipo){
+
+    if(tipo == 'celular'){
+        if (numero.value.length != 9){
+            alert("Telefone celular tem de ter 9 dígitos!");
+            numero.value="";
+            return false;
+        }
+      }
+      else{
+        if(numero.value.length != 8){
+          alert("Telefone fixo tem de ter 8 dígitos!");
+          numero.value ="";
+          return false;
+        }
+      }
+      return true;
+}
+
+function validaDigitosTel(numero){
+    for(i = 0; i< numero.value.length;i++){
+
+        if(isNaN(parseInt(numero.value[i]))){
+        alert("Telefone só pode ter dígitos! Caractere '" + numero.value[i] + "' inválido");
+        numero.value ="";
+        return;
+        }
+    }
+}
+
+/* Números de telefone são um bom exemplo de dados regulares, que podem ser
+identificados através de uma expressão regular, ou regex. Em validaTelFixo e 
+validaTelCelular, o padrão identifica se foram passados 8 ou 9 digitos (e somente digitos),
+respectivamente, e se o número não atender o padrão, retorna uma mensagem de erro.*/
+function validaTelFixo(numero){
+
+    let regex = '^[0-9]{8}^';
+
+    //O número passado não atende a expressão regular
+    if(!numero.value.match(regex)){
+        alert("Telefone fixo dever ter 8 dígitos, sem letras ou símbolos!");
+        numero.value ="";
+        return;
+    }
+    console.log('OK');
+}
+function validaTelCelular(numero){
+
+    let regex = '^[0-9]{9}^';
+
+    //O número passado não atende a expressão regular
+    if(!numero.value.match(regex)){
+        alert("Telefone celular deve ter 9 dígitos, sem letras ou símbolos!");
+        numero.value ="";
+        return;
+    }
+    
+    console.log('OK');
+}
+
+/* ------------------------- Questão 4 -------------------------*/
+
+function MontaPedido(){
+
+}
+
+function adicionaProduto(){
+
 }

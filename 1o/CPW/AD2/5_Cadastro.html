@@ -4,7 +4,7 @@
 
 <head>
   <title>O CEL é o limite</title>
-  <base target="_blank" />
+  <!-- <base target="_blank" /> -->
   <link rel="stylesheet" type="text/css" href="css/Pedalarte.css" />
   <script src="js/scripts.js"/>
 </head>
@@ -72,10 +72,10 @@
         </div>
         <div class="divLinha">
           <label class="colPri">Telefone:</label>
-          <input type="text" class="inpMedio" name="TxtTelefone" required />
+          <input type="text" class="inpMedio" name="TxtTelefone" onfocusout="validaTel(this,'fixo')" required />
           </label>
           <label class="elemDir">Celular:
-            <input type="text" class="inpMedio" name="TxtCelular" />
+            <input type="text" class="inpMedio" onfocusout="validaTel(this,'celular')" name="TxtCelular" />
           </label>
         </div>
         <fieldset class="fsEsq">
