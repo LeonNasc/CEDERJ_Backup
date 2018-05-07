@@ -21,7 +21,7 @@ a:visited {
 }
 
 ul {
-  list-style-image: url('imagens/Engrenagem.png');
+  list-style-image: url('../imagens/Engrenagem.png');
 }
 
 /*
@@ -255,4 +255,9 @@ Estilo Formulário Compras
 
 .inpEmail {
   width: 200px;
+}
+
+/*--------------------- */
+#Guidons,#Selins,#Pedal{
+  display:none;
 }
