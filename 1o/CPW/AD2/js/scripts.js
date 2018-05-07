@@ -7,8 +7,8 @@ const PATHS_DE_IMAGENS = {
     "Pedal": "imagens/PedalIngles.jpg",
     "POTY_BV": "imagens/Bike_Poty_ARO26.jpg",
     "CALOI_T19":"imagens/Bike_Caloi_ARO26.jpg",
-    "MTB_VOLT":"imagens/Bike_Caloi_ARO26.jpg",
-    "CALOI_CECI":"imagens/Bike_MBT_ARO16.jpg",
+    "MTB_VOLT":"imagens/Bike_MTB_ARO16.jpg",
+    "CALOI_CECI":"imagens/Bike_Caloi_ARO16.jpg",
 };
 
 const TAMANHOS_DE_JANELAS = {
@@ -16,7 +16,6 @@ const TAMANHOS_DE_JANELAS = {
     "Selins": "width=350,height=380",
     "Pedal": "width=350,height=360",
 }
-
 
 //Questão 1
 function abreJanela(tipo) {    
@@ -65,6 +64,45 @@ function exibeLista(lista){
 }
 
 //Questão 2
-function mostraBike(bike){
-    alert(bike);
+function mostraBike(bike_index){
+
+    //carregaInfoBikes retorna um array(acessável por bike_index)    
+    bike = carregaInfoBikes()[bike_index];
+    
+    //Todo bike segue o modelo [descr,imagem,preço]
+    mudaTxt(bike[0]);
+    mudaImg(bike[1], bike[2]);
+
+    return false;
+}
+
+function carregaInfoBikes(){
+
+    let MTB = ['MTB Volt PT/AM - Aro 16', PATHS_DE_IMAGENS['MTB_VOLT'], 490,00];
+    let CECI = ['Caloi Ceci Branca - Aro 16', PATHS_DE_IMAGENS['CALOI_CECI'],469,00];
+    let Poty = ['Poty Branca/Vermelho',PATHS_DE_IMAGENS['POTY_BV'],489,00];
+    let T19 = ['Caloi Sport T19 V21' ,PATHS_DE_IMAGENS['CALOI_T19'],880,00];
+
+    return info_bikes = Array(MTB, CECI, Poty, T19);    
+}
+
+function mudaTxt(nome){
+    descr = document.getElementById('descrição');
+    descr.innerHTML = nome;
+}
+
+function mudaImg(imagem_path, valor){
+    imagem =  document.getElementById('imagem');
+    imagem.querySelector('img').src = imagem_path;
+
+    preço = document.getElementById('preço');
+
+    if(!preço){
+        imagem.innerHTML += "<div id='preço'> R$" + valor + "</div>";
+    }
+    else{
+        preço.innerHTML = "<div id='preço'> R$" + valor + "</div>";
+    }
+    imagem.style.textAlign = "center";
+    preço.style.textAlign = "center";
 }

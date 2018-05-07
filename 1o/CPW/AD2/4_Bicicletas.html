@@ -3,8 +3,9 @@
 
 <head>
   <title>O CEL é o limite</title>
-  <base target="_blank" />
+  <!-- <base target="_blank" /> -->
   <link rel="stylesheet" type="text/css" href="css/Pedalarte.css" />
+  <script src="js/scripts.js"/>
 </head>
 
 <body>
@@ -49,24 +50,32 @@
       <tr>
         <th class="linTH">Tipo</th>
         <th class="linTH">Modelo</th>
-        <th class="linTH"> </th>
+        <th id="descrição" class="linTH"> </th>
       </tr>
       <tr>
         <th rowspan="2" class="colTH">ARO 16</th>
-        <a href="" onclick="mostraBike('MTB_VOLT')"><td>MTB VOLT 1.6 PT/AM</td></a>
+        <td>
+          <a href="#" onclick="mostraBike(0)">MTB VOLT 1.6 PT/AM</a>
+        </td>
         <td rowspan="4" id="imagem">
           <img src="imagens/Vazio.jpg"></img>
         </td>
       </tr>
       <tr>
-        <a href="" onclick="mostraBike('CALOI_CECI')"><td>CALOI CECI BRANCA</td></a>
+        <td>
+          <a href="#" onclick="mostraBike(1)">CALOI CECI BRANCA</a>
+        </td>
       </tr>
       <tr>
         <th rowspan="2" class="colTH">ARO 26</th>
-        <a href="" onclick="mostraBike('POTY_BV')"><td>POTY Branca/Vermelho</td></a>
+        <td><a href="#" onclick="mostraBike(2)">
+          POTY Branca/Vermelho</a>
+        </td>
       </tr>
       <tr>
-        <a href="" onclick="mostraBike('CALOI_T19')"></a><td>CALOI Sport T19 V21 Marchas</td></a>
+        <td>
+          <a href="#" onclick="mostraBike(3)">CALOI Sport T19 V21 Marchas</a>
+        </td>
       </tr>
     </table>
   </section>
